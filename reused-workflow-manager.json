@@ -1,0 +1,16 @@
+{
+    "enabledManagers": [
+        "regex"
+    ],
+    "regexManagers": [
+        {
+            "fileMatch": [
+                "^.github/workflows/.+.yaml$"
+            ],
+            "matchStrings": [
+                "uses: (?<depName>.+?\/.+?(?=\/)).+.yaml@(?<currentValue>.*)"
+            ],
+            "datasourceTemplate": "github-tags"
+        }
+    ]
+}
