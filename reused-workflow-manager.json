@@ -8,7 +8,7 @@
                 "^.github/workflows/.+.yaml$"
             ],
             "matchStrings": [
-                "uses: (?<depName>.+?\/.+?)\/.+.yaml@(?<currentValue>.+)"
+                "uses: (?<depName>.+?\/.+?)\/.+.yaml@v(?<currentValue>.+)"
             ],
             "datasourceTemplate": "github-tags"
         }
